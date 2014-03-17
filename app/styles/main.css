@@ -1,0 +1,236 @@
+/*
+
+Template Name: Syndicate
+Template Demo: http://awerest.com/demo/syndicate
+Author: Awerest
+Author website: http://awerest.com
+Version: 1.0
+
+---------------
+
+Table of Contents:
+
+1) Typography
+2) Intro slider images
+3) Section Headers
+4) Services / Details / Customers
+5) Sections
+6) Team
+7) Blog
+8) Components
+9) Footer
+10) Contact
+11) Navigation
+12) Carousel
+13) Preloader
+14) Buttons
+15) Pricing tables
+16) Gallery/Blog hover effect
+17) Guideline
+
+*/
+
+body {
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #fff;
+}
+
+::selection {
+    background: #852b99;
+    color: #fff;
+    -webkit-text-stroke-color: #fff;
+}
+
+::-moz-selection {
+    background: #852b99;
+    color: #fff;
+}
+
+/* ==== Typography ==== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 300;
+    color: #25272B;
+    text-align: center;
+    margin: 0 0 10px 0;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+h1 small {
+    display: block;
+    font-size: .6em;
+}
+
+@media (max-width: 568px) {
+    h1 {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+}
+
+p {
+    line-height: 1.2;
+}
+
+p.lead {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px 0 75px 0;
+    line-height: 1.5;
+}
+
+a {
+    font-size: 14px;
+    color: #25272B;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+a:hover {
+    color: #25272B;
+    text-decoration: none;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.divider {
+    margin: 90px 0;
+    border-bottom: 1px dashed #dfe1e3;
+}
+
+.content-divider {
+    margin: 30px 0 90px 0;
+    border-bottom: 1px dashed #dfe1e3;
+}
+
+.small-divider {
+    margin: 30px 0;
+    border-bottom: 1px dashed #dfe1e3;
+}
+
+textarea:focus, input:focus, a:focus, *:focus {
+    outline: none;
+}
+
+/* ==== Buttons ==== */
+
+.btn-xxl {
+    padding: 15px 50px;
+    font-size: 21px;
+    line-height: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*.btn-default {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #eee;
+    -webkit-box-shadow: 0 2px #aaa, inset 0 2px rgba(204,204,204,.1);
+    -moz-box-shadow: 0 2px #aaa, inset 0 2px rgba(204,204,204,.1);
+    box-shadow: 0 2px #aaa, inset 0 2px rgba(204,204,204,.1);
+}
+.btn-primary {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #00a7fd;
+    -webkit-box-shadow: 0 2px #1172b7, inset 0 2px rgba(255,255,255,.1);
+    -moz-box-shadow: 0 2px #1172b7, inset 0 2px rgba(255,255,255,.1);
+    box-shadow: 0 2px #1172b7, inset 0 2px rgba(255,255,255,.1);
+}
+*/
+/* ==== Preloader ==== */
+
+#page-preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #222;
+    z-index: 9999;
+    position: fixed;
+}
+
+#page-preloader > div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/preload.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+/* ==== Page Menu ==== */
+
+#page-menu {
+}
+#page-menu a {
+    color: #f0f0f0;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 35px;
+}
+#page-menu a:hover {
+    background: none;
+    color: #00a7fd;
+}
+#page-menu a.btn {
+    padding: 6px 15px;
+    margin-top: 8px;
+}
+#page-menu a.btn:hover {
+    background: #1172b7;
+    color: #fff;
+}
+
+/* ==== Page Intro ==== */
+
+#page-header {
+    background: #000 url(../images/header.jpg) bottom center no-repeat;
+    box-shadow: 0px -5px 7px rgba(0,0,0,.15);
+}
+#page-header .container {
+    position: relative;
+    height: 100%;
+    padding-top: 10%;
+}
+#page-header h1, h2 {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    text-align: left;
+}
+#page-header h1 {
+    font-size: 43px;
+    font-weight: 300;
+}
+#page-header h2 {
+    font-size: 27px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#page-header.small {
+    height: 200px;
+}

@@ -1,0 +1,31 @@
+/* ==== Header ==== */
+
+#xereonet-header {
+    height: 40px;
+    background: #2c2f39; /* Old browsers */
+    background: -moz-linear-gradient(top,  #2c2f39 0%, #23252d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c2f39), color-stop(100%,#23252d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #2c2f39 0%,#23252d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #2c2f39 0%,#23252d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #2c2f39 0%,#23252d 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #2c2f39 0%,#23252d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2f39', endColorstr='#23252d',GradientType=0 ); /* IE6-9 */
+    padding-top: 8px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+#xereonet-header ul.list-inline.divide {
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid #333;
+}
+#xereonet-header ul.list-inline li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#xereonet-header li a {
+    color: #777;
+    font-size: 12px;
+}
+#xereonet-header li.active a {
+    color: #00a7fd;
+}
