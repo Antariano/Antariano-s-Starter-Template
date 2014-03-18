@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 $(window).resize(function() {
     'use strict';
-    $('#page-header:not(.small)').css({'height': ($(window).height()-40) + 'px'});
+    $('#page-header:not(.small)').css({'height': ($(window).height()-200) + 'px'});
 });
 
 
@@ -28,7 +28,7 @@ $(window).load(function() {
     'use strict';
 
     //intro height
-    $('#page-header:not(.small)').css({'height': ($(window).height()-40)+'px'});
+    $('#page-header:not(.small)').css({'height': ($(window).height()-200)+'px'});
 
     //preloader
     $(window).scrollTop(0);

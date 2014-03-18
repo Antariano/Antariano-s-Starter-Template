@@ -1,33 +1,5 @@
 /*
-
-Template Name: Syndicate
-Template Demo: http://awerest.com/demo/syndicate
-Author: Awerest
-Author website: http://awerest.com
-Version: 1.0
-
----------------
-
-Table of Contents:
-
-1) Typography
-2) Intro slider images
-3) Section Headers
-4) Services / Details / Customers
-5) Sections
-6) Team
-7) Blog
-8) Components
-9) Footer
-10) Contact
-11) Navigation
-12) Carousel
-13) Preloader
-14) Buttons
-15) Pricing tables
-16) Gallery/Blog hover effect
-17) Guideline
-
+    Table of Contents:
 */
 
 body {
@@ -54,20 +26,25 @@ h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
 }
 
-h1 {
-    font-size: 56px;
+h2 {
+    font-size: 28px;
     font-weight: 300;
-    color: #25272B;
-    text-align: center;
-    margin: 0 0 10px 0;
-    line-height: 1;
-    letter-spacing: -3px;
 }
 
-h1 small {
+h2 b {
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+h3 small {
     display: block;
     font-size: .6em;
 }
+
 
 @media (max-width: 568px) {
     h1 {
@@ -88,8 +65,6 @@ p.lead {
 }
 
 a {
-    font-size: 14px;
-    color: #25272B;
     transition: 0.2s;
     -moz-transition: 0.2s;
     -webkit-transition: 0.2s;
@@ -124,6 +99,26 @@ textarea:focus, input:focus, a:focus, *:focus {
     outline: none;
 }
 
+/* ==== Tabs ==== */
+
+.nav.nav-tabs li a  {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav.nav-tabs li:hover a {
+    border: none;
+    border-bottom: 1px solid #1576b6;
+    background: none;
+}
+
+
+.nav.nav-tabs li.active a {
+    border-bottom: 1px solid #00a7fd;
+    color: #1576b6;
+}
+
 /* ==== Buttons ==== */
 
 .btn-xxl {
@@ -135,25 +130,40 @@ textarea:focus, input:focus, a:focus, *:focus {
     border-radius: 5px;
 }
 
-/*.btn-default {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    background-color: #eee;
-    -webkit-box-shadow: 0 2px #aaa, inset 0 2px rgba(204,204,204,.1);
-    -moz-box-shadow: 0 2px #aaa, inset 0 2px rgba(204,204,204,.1);
-    box-shadow: 0 2px #aaa, inset 0 2px rgba(204,204,204,.1);
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
 }
-.btn-primary {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    background-color: #00a7fd;
-    -webkit-box-shadow: 0 2px #1172b7, inset 0 2px rgba(255,255,255,.1);
-    -moz-box-shadow: 0 2px #1172b7, inset 0 2px rgba(255,255,255,.1);
-    box-shadow: 0 2px #1172b7, inset 0 2px rgba(255,255,255,.1);
+
+.btn-primary.btn-outline {
+    color: #428bca;
 }
-*/
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
 /* ==== Preloader ==== */
 
 #page-preloader {
@@ -211,26 +221,85 @@ textarea:focus, input:focus, a:focus, *:focus {
     background: #000 url(../images/header.jpg) bottom center no-repeat;
     box-shadow: 0px -5px 7px rgba(0,0,0,.15);
 }
-#page-header .container {
+#page-header .container, .row {
     position: relative;
     height: 100%;
-    padding-top: 10%;
 }
-#page-header h1, h2 {
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+
+.section {
+    padding: 40px 0;
+}
+.section h2 {
+    padding-bottom: 20px;
+}
+
+/* ==== Page CTA ==== */
+
+#page-cta {
+    background: #1576b6;
+    text-align: center;
+}
+
+/* ==== Page ftease ==== */
+
+#page-ftease {
+    color: #414349;
+    text-align: center;
+}
+
+#page-ftease .nav-tabs {
+    margin-bottom: 40px;
+}
+
+#page-ftease p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+#page-ftease p, #page-ftease h3 {
+    color: #2c2f39;
+}
+
+/* ==== Page twitter ==== */
+
+#page-twitter {
+    background: #eee;
+    color: #414349;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    text-align: center;
+}
+
+#page-twitter p.shareit{
+    margin-bottom: 30px;
+}
+
+.twitter-widget {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom-width: 3px;
+    border-radius: 3px;
+    padding: 15px;
     text-align: left;
+    margin-bottom: 20px;
 }
-#page-header h1 {
-    font-size: 43px;
-    font-weight: 300;
+
+.twitter-widget .avatar{
+    width:79px;
+    min-height:50px;
+    margin-right:22px;
+    text-align:center!important;
+    padding: 0 0 40px
 }
-#page-header h2 {
-    font-size: 27px;
-    font-weight: 300;
-    margin-top: 20px;
-    margin-bottom: 50px;
+
+/* ==== Page by ==== */
+
+#page-by {
+    color: #414349;
+    text-align: center;
 }
-#page-header.small {
-    height: 200px;
+
+.teamavatar {
+    padding: 5px;
+    border: 1px dashed #ccc;
 }

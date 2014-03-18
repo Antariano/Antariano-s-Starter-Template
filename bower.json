@@ -4,7 +4,9 @@
   "dependencies": {
     "bootstrap": "~3.0.3",
     "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "skrollr": "~0.6.21",
+    "retina.js": "~1.2.0"
   },
   "devDependencies": {}
 }
